@@ -1,0 +1,5 @@
+Prog := Expr
+Expr := AddExpr
+AddExpr := MulExpr | AddExpr + MulExpr | AddExpr - MulExpr
+MulExpr := PrimaryExpr | MulExpr*PrimaryExpr | MulExpr/PrimaryExpr
+PrimaryExpr := Num
